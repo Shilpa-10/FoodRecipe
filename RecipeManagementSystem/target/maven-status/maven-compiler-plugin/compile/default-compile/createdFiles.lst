@@ -1,0 +1,9 @@
+org\abn\springmvc\model\Login.class
+org\abn\springmvc\dao\UserDaoImpl.class
+org\abn\springmvc\model\User.class
+org\abn\springmvc\controller\LoginController.class
+org\abn\springmvc\service\UserService.class
+org\abn\springmvc\dao\UserMapper.class
+org\abn\springmvc\controller\RegistrationController.class
+org\abn\springmvc\service\UserServiceImpl.class
+org\abn\springmvc\dao\UserDao.class
