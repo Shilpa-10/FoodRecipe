@@ -35,11 +35,17 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+<!-- spring-jdbc -->
 <dependency>
     <groupId>org.springframework</groupId>
     <artifactId>spring-jdbc</artifactId>
     <version>${springjdbc.version}</version>
+</dependency>
+<!-- mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.17</version>
 </dependency>
 
 
