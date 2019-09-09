@@ -11,10 +11,13 @@ import org.springframework.web.servlet.ModelAndView;
 import org.abn.springmvc.model.Login;
 import org.abn.springmvc.model.User;
 import org.abn.springmvc.service.UserService;
+
 @Controller
 public class LoginController {
+	
   @Autowired
   UserService userService;
+  
   @RequestMapping(value = "/login", method = RequestMethod.GET)
   public ModelAndView showLogin(HttpServletRequest request, HttpServletResponse response) {
     ModelAndView mav = new ModelAndView("login");

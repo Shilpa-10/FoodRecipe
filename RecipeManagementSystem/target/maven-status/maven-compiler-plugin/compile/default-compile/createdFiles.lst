@@ -1,3 +1,4 @@
+org\abn\springmvc\connection\Connectivity.class
 org\abn\springmvc\model\Login.class
 org\abn\springmvc\dao\UserDaoImpl.class
 org\abn\springmvc\model\User.class

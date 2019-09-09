@@ -21,7 +21,7 @@
                             <form:label path="password">Password</form:label>
                         </td>
                         <td>
-                            <form:password path="password" name="password" id="password" />
+                            <form:password path="password" name="password1" id="password" />
                         </td>
                     </tr>
                     <tr>

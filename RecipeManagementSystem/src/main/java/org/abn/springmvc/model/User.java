@@ -2,7 +2,7 @@ package org.abn.springmvc.model;
 
 public class User {
 	  private String username;
-	  private String password;
+	  private String password1;
 	  private String firstname;
 	  private String lastname;
 	  private String email;
@@ -14,11 +14,11 @@ public class User {
 	  public void setUsername(String username) {
 	  this.username = username;
 	  }
-	  public String getPassword() {
-	  return password;
+	  public String getPassword1() {
+	  return password1;
 	  }
 	  public void setPassword(String password) {
-	  this.password = password;
+	  this.password1 = password;
 	  }
 	  public String getFirstname() {
 	  return firstname;

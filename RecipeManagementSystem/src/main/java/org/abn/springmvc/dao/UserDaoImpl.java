@@ -23,15 +23,15 @@ public class UserDaoImpl implements UserDao {
 
   public void register(User user) {
 
-    String sql = "insert into users values(?,?,?,?,?,?,?)";
+    String sql = "insert into user values(?,?,?,?,?,?,?)";
 
-    jdbcTemplate.update(sql, new Object[] { user.getUsername(), user.getPassword(), user.getFirstname(),
+    jdbcTemplate.update(sql, new Object[] { user.getUsername(), user.getPassword1(), user.getFirstname(),
         user.getLastname(), user.getEmail(), user.getAddress(), user.getPhone() });
   }
 
   public User validateUser(Login login) {
 
-    String sql = "select * from users where username='" + login.getUsername() + "' and password='" + login.getPassword()
+    String sql = "select * from user where username='" + login.getUsername() + "' and password1='" + login.getPassword()
         + "'";
 
     List<User> users = jdbcTemplate.query(sql, new UserMapper());
@@ -47,7 +47,7 @@ class UserMapper implements RowMapper<User> {
     User user = new User();
 
     user.setUsername(rs.getString("username"));
-    user.setPassword(rs.getString("password"));
+    user.setPassword(rs.getString("password1"));
     user.setFirstname(rs.getString("firstname"));
     user.setLastname(rs.getString("lastname"));
     user.setEmail(rs.getString("email"));
